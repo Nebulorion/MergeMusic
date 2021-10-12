@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html><head><title>Python: module tests</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head><body bgcolor="#f0f0f8">
+
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="heading">
+<tr bgcolor="#7799ee">
+<td valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial">&nbsp;<br><big><big><strong>tests</strong></big></big></font></td
+><td align=right valign=bottom
+><font color="#ffffff" face="helvetica, arial"><a href=".">index</a><br><a href="file:/home/runner/MergeMusic/tests.py">/home/runner/MergeMusic/tests.py</a></font></td></tr></table>
+    <p></p>
+<p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#aa55cc">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Modules</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#aa55cc"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><table width="100%" summary="list"><tr><td width="25%" valign=top><a href="glob.html">glob</a><br>
+</td><td width="25%" valign=top><a href="os.html">os</a><br>
+</td><td width="25%" valign=top><a href="shutil.html">shutil</a><br>
+</td><td width="25%" valign=top></td></tr></table></td></tr></table><p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ee77aa">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#ffffff" face="helvetica, arial"><big><strong>Classes</strong></big></font></td></tr>
+    
+<tr><td bgcolor="#ee77aa"><tt>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</tt></td><td>&nbsp;</td>
+<td width="100%"><dl>
+<dt><font face="helvetica, arial"><a href="builtins.html#object">builtins.object</a>
+</font></dt><dd>
+<dl>
+<dt><font face="helvetica, arial"><a href="tests.html#TestMergeMusic">TestMergeMusic</a>
+</font></dt></dl>
+</dd>
+</dl>
+ <p>
+<table width="100%" cellspacing=0 cellpadding=2 border=0 summary="section">
+<tr bgcolor="#ffc8d8">
+<td colspan=3 valign=bottom>&nbsp;<br>
+<font color="#000000" face="helvetica, arial"><a name="TestMergeMusic">class <strong>TestMergeMusic</strong></a>(<a href="builtins.html#object">builtins.object</a>)</font></td></tr>
+    
+<tr bgcolor="#ffc8d8"><td rowspan=2><tt>&nbsp;&nbsp;&nbsp;</tt></td>
+<td colspan=2><tt>Класс&nbsp;<a href="#TestMergeMusic">TestMergeMusic</a>()&nbsp;проводит&nbsp;модульные&nbsp;тесты&nbsp;для&nbsp;MergeMusicPresenter&nbsp;и&nbsp;MergeMusicView<br>&nbsp;</tt></td></tr>
+<tr><td>&nbsp;</td>
+<td width="100%">Methods defined here:<br>
+<dl><dt><a name="TestMergeMusic-clean_folders"><strong>clean_folders</strong></a>(self)</dt><dd><tt>Функция&nbsp;<a href="#TestMergeMusic-clean_folders">clean_folders</a>()&nbsp;очищает&nbsp;output,&nbsp;input1&nbsp;и&nbsp;input2&nbsp;перед&nbsp;проведением&nbsp;тестов</tt></dd></dl>
+
+<dl><dt><a name="TestMergeMusic-test_check_conditions"><strong>test_check_conditions</strong></a>(self)</dt><dd><tt>Функция&nbsp;<a href="#TestMergeMusic-test_check_conditions">test_check_conditions</a>()&nbsp;проверяет,&nbsp;что&nbsp;функция&nbsp;check_conditions()&nbsp;из&nbsp;MergeMusicPresenter&nbsp;определяет&nbsp;файлы&nbsp;в&nbsp;output,&nbsp;input1&nbsp;и&nbsp;input2&nbsp;и&nbsp;выводит&nbsp;правильные&nbsp;значения</tt></dd></dl>
+
+<dl><dt><a name="TestMergeMusic-test_create"><strong>test_create</strong></a>(self)</dt><dd><tt>Функция&nbsp;<a href="#TestMergeMusic-test_create">test_create</a>()&nbsp;проверяет,&nbsp;что&nbsp;функция&nbsp;create()&nbsp;из&nbsp;MergeMusicPresenter&nbsp;правильно&nbsp;возращает&nbsp;название&nbsp;аудиофайла,&nbsp;созданного&nbsp;в&nbsp;output,&nbsp;последовательно&nbsp;соединённого&nbsp;из&nbsp;аудиофайлов&nbsp;из&nbsp;input1&nbsp;и&nbsp;input2<br>
+Также&nbsp;проводится&nbsp;проверка&nbsp;на&nbsp;возвращение&nbsp;предупреждений,&nbsp;если&nbsp;в&nbsp;папках&nbsp;input1&nbsp;и&nbsp;input2&nbsp;ожидается&nbsp;проблема&nbsp;с&nbsp;файлами</tt></dd></dl>
+
+<dl><dt><a name="TestMergeMusic-test_start"><strong>test_start</strong></a>(self)</dt><dd><tt>Функция&nbsp;<a href="#TestMergeMusic-test_start">test_start</a>()&nbsp;проверяет,&nbsp;что&nbsp;функция&nbsp;start()&nbsp;из&nbsp;MergeMusicView,&nbsp;которая&nbsp;также&nbsp;вызывает&nbsp;функцию&nbsp;create()&nbsp;из&nbsp;MergeMusicPresenter,&nbsp;правильно&nbsp;возращает&nbsp;название&nbsp;аудиофайла,&nbsp;созданного&nbsp;в&nbsp;output,&nbsp;последовательно&nbsp;соединённого&nbsp;из&nbsp;аудиофайлов&nbsp;из&nbsp;input1&nbsp;и&nbsp;input2<br>
+Также&nbsp;проводится&nbsp;проверка&nbsp;на&nbsp;возвращение&nbsp;предупреждений,&nbsp;если&nbsp;в&nbsp;папках&nbsp;input1&nbsp;и&nbsp;input2&nbsp;ожидается&nbsp;проблема&nbsp;с&nbsp;файлами</tt></dd></dl>
+
+<hr>
+Data descriptors defined here:<br>
+<dl><dt><strong>__dict__</strong></dt>
+<dd><tt>dictionary&nbsp;for&nbsp;instance&nbsp;variables&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<dl><dt><strong>__weakref__</strong></dt>
+<dd><tt>list&nbsp;of&nbsp;weak&nbsp;references&nbsp;to&nbsp;the&nbsp;object&nbsp;(if&nbsp;defined)</tt></dd>
+</dl>
+<hr>
+Data and other attributes defined here:<br>
+<dl><dt><strong>mergeMusicPresenter</strong> = &lt;mergemusicpresenter.MergeMusicPresenter object&gt;</dl>
+
+<dl><dt><strong>mergeMusicView</strong> = &lt;mergemusicview.MergeMusicView object&gt;</dl>
+
+</td></tr></table></td></tr></table>
+</body></html>
